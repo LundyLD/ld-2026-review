@@ -29,18 +29,6 @@
 			
 		</style>
 		<title>Cute Computer Follow Cursor</title>
-		<script>
-			(() => {
-				const cappedDevicePixelRatio = Math.min(window.devicePixelRatio || 1, 1.15);
-				try {
-					Object.defineProperty(window, 'devicePixelRatio', {
-						get: () => cappedDevicePixelRatio,
-					});
-				} catch (error) {
-					window.__LD26_DPR_CAP__ = cappedDevicePixelRatio;
-				}
-			})();
-		</script>
 		<link rel="modulepreload" href="./runtime.js">
 		<link rel="preload" href="./scene.splinecode" as="fetch">
 	</head>
